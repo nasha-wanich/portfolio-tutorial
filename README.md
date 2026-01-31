@@ -1,6 +1,6 @@
 # Portfolio Tutorial
 
-This repo contains code for a simple portfolio tutorial using HTML, CSS, and Javascript.
+A super simple portfolio website tutorial using HTML, CSS, and Javascript. Great for beginners coding their first portfolio website!
 
 ## Youtube Tutorial
 
