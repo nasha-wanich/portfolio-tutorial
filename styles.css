@@ -1,0 +1,171 @@
+/* Main CSS styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* layout and typography */
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20vw;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.intro {
+  max-width: 700px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+strong {
+  font-weight: 600;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.featured {
+    margin: 30px 0 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.featured p {
+    font-size: 1rem;
+}
+
+/* projects */
+
+.project {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vh;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.project-tag {
+    font-size: 0.9rem;
+    color: #999;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.project-description {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    max-width: 700px;
+}
+
+.project-images {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-image.device {
+    flex: 0 0 auto;
+    max-width: 100%;
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.project-image.widget {
+    flex: 0 0 auto;
+    max-width: 100%;
+    width: 100%;     
+    flex: 1 1 100%; 
+}
+
+/* Mobile styling */
+@media (max-width: 768px) {
+    .container {
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .intro {
+        font-size: 0.95rem;
+    }
+
+    .project-header {
+        flex-direction: column;
+        align-items: left; 
+        gap: 5px;
+    }
+
+    .project-title {
+        font-size: 1.25rem;
+    }
+
+    .project-tag {
+        font-size: 0.85rem;
+    }
+
+    .project-images {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-image.device,
+    .project-image.widget {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 16px;
+    }
+}
